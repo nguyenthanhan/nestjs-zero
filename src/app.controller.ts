@@ -8,11 +8,6 @@ export class AppController {
   @Get()
   @Render('home.ejs')
   root() {
-    return { message: 'Hello World!' };
-  }
-
-  @Get()
-  getHello(): string {
     return this.appService.getHello();
   }
 }
